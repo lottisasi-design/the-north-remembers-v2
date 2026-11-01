@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090c10">
+    <meta name="description" content="The North Remembers — A journey through Westeros.">
+    <title>The North Remembers | A Journey Through Westeros</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main id="journey">
+
+    <!-- SCREEN 1: WINTERFELL -->
+    <section class="screen active" id="screen-1" data-screen="1">
+        <div class="scene-background winterfell-background"></div>
+        <div class="scene-shade"></div>
+
+        <header class="topbar">
+            <div class="wolf-mark">❖</div>
+            <div class="brand">THE NORTH REMEMBERS</div>
+            <div class="top-actions">
+                <span class="screen-count">I / VI</span>
+                <button class="menu-button" aria-label="Open navigation">☰</button>
+            </div>
+        </header>
+
+        <div class="scene-content opening-content">
+            <p class="eyebrow">THE NORTH AWAITS</p>
+            <h1>THE GATES OF<br><span>WINTERFELL</span></h1>
+            <div class="ornament">✦ ━━━━━ ❖ ━━━━━ ✦</div>
+            <p class="scene-description">A journey through the North awaits.</p>
+            <button class="main-button next-screen" data-next="2">
+                ENTER THE NORTH <span>→</span>
+            </button>
+        </div>
+
+        <div class="side-indicator">
+            <span class="active-dot"></span>
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="bottom-note">WINTER IS COMING</div>
+    </section>
+
+
+    <!-- SCREEN 2: WESTEROS -->
+    <section class="screen" id="screen-2" data-screen="2">
+        <div class="scene-background map-background"></div>
+        <div class="scene-shade map-shade"></div>
+
+        <header class="topbar">
+            <div class="wolf-mark">❖</div>
+            <div class="brand">THE NORTH REMEMBERS</div>
+            <div class="top-actions">
+                <span class="screen-count">II / VI</span>
+                <button class="menu-button" aria-label="Open navigation">☰</button>
+            </div>
+        </header>
+
+        <div class="map-layout">
+            <div class="map-art">
+                <img src="assets/westeros/westeros-map.png"
+                     alt="Illustrated map of Westeros">
+
+                <button class="map-marker winterfell-marker"
+                        data-location="WINTERFELL">✦</button>
+                <button class="map-marker wall-marker"
+                        data-location="THE WALL">✦</button>
+                <button class="map-marker kings-marker"
+                        data-location="KING'S LANDING">✦</button>
+            </div>
+
+            <div class="map-information">
+                <p class="eyebrow">A WORLD OF KINGS AND LEGENDS</p>
+                <h2>THE WORLD OF<br><span>WESTEROS</span></h2>
+                <div class="ornament">━━━━ ❖ ━━━━</div>
+                <p>Seven kingdoms. Ancient houses. Endless stories.</p>
+                <p class="map-hint">Choose a location on the map to explore.</p>
+                <p class="location-display" id="location-display">THE REALM AWAITS</p>
+                <button class="main-button next-screen" data-next="3">
+                    CONTINUE <span>→</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="side-indicator">
+            <span></span><span class="active-dot"></span>
+            <span></span><span></span><span></span><span></span>
+        </div>
+    </section>
+
+
+    <!-- SCREEN 3: HOUSE STARK -->
+    <section class="screen" id="screen-3" data-screen="3">
+        <div class="scene-background stark-background"></div>
+        <div class="scene-shade"></div>
+
+        <header class="topbar">
+            <div class="wolf-mark">❖</div>
+            <div class="brand">THE NORTH REMEMBERS</div>
+            <div class="top-actions">
+                <span class="screen-count">III / VI</span>
+                <button class="menu-button" aria-label="Open navigation">☰</button>
+            </div>
+        </header>
+
+        <div class="scene-content stark-content">
+            <p class="eyebrow">THE HONOUR OF THE NORTH</p>
+
+            <img class="stark-emblem"
+                 src="assets/stark/stark-sigil.png"
+                 alt="Silver wolf on a medieval banner">
+
+            <h2>HOUSE <span>STARK</span></h2>
+            <div class="ornament">✦ ━━━ ❖ ━━━ ✦</div>
+            <p class="house-motto">WINTER IS COMING</p>
+            <p class="scene-description">
+                The strength of the North lies in its loyalty.
+            </p>
+
+            <button class="main-button next-screen" data-next="4">
+                CONTINUE <span>→</span>
+            </button>
+        </div>
+
+        <div class="side-indicator">
+            <span></span><span></span><span class="active-dot"></span>
+            <span></span><span></span><span></span>
+        </div>
+    </section>
+
+
+    <!-- SCREEN 4: THE WHITE WOLF -->
+    <section class="screen" id="screen-4" data-screen="4">
+        <div class="scene-background jon-background"></div>
+        <div class="scene-shade jon-shade"></div>
+
+        <header class="topbar">
+            <div class="wolf-mark">❖</div>
+            <div class="brand">THE NORTH REMEMBERS</div>
+            <div class="top-actions">
+                <span class="screen-count">IV / VI</span>
+                <button class="menu-button" aria-label="Open navigation">☰</button>
+            </div>
+        </header>
+
+        <div class="jon-content">
+            <p class="eyebrow">THE KING IN THE NORTH</p>
+            <h2>THE <span>WHITE WOLF</span></h2>
+            <div class="ornament">━━━━ ❖ ━━━━</div>
+            <p class="jon-quote">
+                "The things we love destroy us every time."
+            </p>
+            <button class="main-button next-screen" data-next="5">
+                CONTINUE <span>→</span>
+            </button>
+        </div>
+
+        <div class="side-indicator">
+            <span></span><span></span><span></span>
+            <span class="active-dot"></span><span></span><span></span>
+        </div>
+    </section>
+
+
+    <!-- SCREEN 5: BEYOND THE WALL -->
+    <section class="screen" id="screen-5" data-screen="5">
+        <div class="scene-background wall-background"></div>
+        <div class="scene-shade"></div>
+
+        <header class="topbar">
+            <div class="wolf-mark">❖</div>
+            <div class="brand">THE NORTH REMEMBERS</div>
+            <div class="top-actions">
+                <span class="screen-count">V / VI</span>
+                <button class="menu-button" aria-label="Open navigation">☰</button>
+            </div>
+        </header>
+
+        <div class="scene-content wall-content">
+            <p class="eyebrow">THE EDGE OF THE KNOWN WORLD</p>
+            <h2>BEYOND<br><span>THE WALL</span></h2>
+            <div class="ornament">✦ ━━━ ❖ ━━━ ✦</div>
+            <p class="scene-description">
+                Where the known world ends,<br>
+                the real adventure begins.
+            </p>
+            <button class="main-button next-screen" data-next="6">
+                CONTINUE <span>→</span>
+            </button>
+        </div>
+
+        <div class="side-indicator">
+            <span></span><span></span><span></span>
+            <span></span><span class="active-dot"></span><span></span>
+        </div>
+    </section>
+
+
+    <!-- SCREEN 6: BIRTHDAY FINALE -->
+    <section class="screen" id="screen-6" data-screen="6">
+        <div class="scene-background throne-background"></div>
+        <div class="scene-shade throne-shade"></div>
+
+        <header class="topbar">
+            <div class="wolf-mark">❖</div>
+            <div class="brand">THE NORTH REMEMBERS</div>
+            <div class="top-actions">
+                <span class="screen-count">VI / VI</span>
+                <button class="menu-button" aria-label="Open navigation">☰</button>
+            </div>
+        </header>
+
+        <div class="birthday-content">
+
+            <p class="eyebrow">A NEW CHAPTER BEGINS</p>
+
+            <div class="ornament">✦ ━━━━━ ❖ ━━━━━ ✦</div>
+
+            <h2>A BIRTHDAY<br><span>IN THE NORTH</span></h2>
+
+            <div class="birthday-divider"></div>
+
+            <p class="birthday-greeting">
+                A VERY HAPPIEST BIRTHDAY
+            </p>
+
+            <h1 class="birthday-name">
+                GIREESH GAARU!
+            </h1>
+
+            <div class="birthday-name-ornament">
+                ✦ ━━━━━ ❖ ━━━━━ ✦
+            </div>
+
+            <p class="birthday-dedication">
+                Made with love for Gireesh gaaruu ♡
+            </p>
+
+            <p class="final-line">THE NORTH REMEMBERS.</p>
+
+            <button class="main-button restart-button" id="restart-button">
+                RETURN TO THE NORTH <span>↺</span>
+            </button>
+
+        </div>
+
+        <div class="side-indicator">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span class="active-dot"></span>
+        </div>
+    </section>
+
+</main>
+
+
+<!-- NAVIGATION OVERLAY -->
+<div class="navigation-overlay" id="navigation-overlay">
+    <button class="close-menu" aria-label="Close navigation">✕</button>
+
+    <p class="eyebrow">CHOOSE YOUR DESTINATION</p>
+
+    <nav class="scene-navigation">
+        <button data-go="1">I. THE GATES OF WINTERFELL</button>
+        <button data-go="2">II. THE WORLD OF WESTEROS</button>
+        <button data-go="3">III. HOUSE STARK</button>
+        <button data-go="4">IV. THE WHITE WOLF</button>
+        <button data-go="5">V. BEYOND THE WALL</button>
+        <button data-go="6">VI. A BIRTHDAY IN THE NORTH</button>
+    </nav>
+</div>
+
+
+<!-- SNOW PARTICLES -->
+<div class="snow-container" id="snow-container"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
